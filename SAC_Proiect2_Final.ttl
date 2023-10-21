@@ -1,0 +1,150 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "SAC_Proiect2"@en; 
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 12 ###
+#  --------------------------- Property 0------------------------- 
+:kcals rdf:type owl:DatatypeProperty ;
+       rdfs:label "kcals"@IRI-based; 
+       rdfs:label "kcals"@en; 
+       rdfs:domain :PizzaPollo;
+       rdfs:range xsd:double . 
+#  --------------------------- Property 1------------------------- 
+:oobjProp2 rdf:type owl:ObjectProperty ;
+           rdfs:label "oobjProp2"@IRI-based; 
+           rdfs:label "contains"@en; 
+           rdfs:domain :PizzaPollo;
+           rdfs:range :ChickenBreast . 
+#  --------------------------- Property 2------------------------- 
+:objectProperty33 rdf:type owl:ObjectProperty ;
+                  rdfs:label "objectProperty33"@IRI-based; 
+                  rdfs:label "hasTopping"@en; 
+                  rdfs:domain :PizzaPollo;
+                  rdfs:range :PolloTopping . 
+#  --------------------------- Property 3------------------------- 
+:kcals1 rdf:type owl:DatatypeProperty ;
+        rdfs:label "kcals1"@IRI-based; 
+        rdfs:label "kcals"@en; 
+        rdfs:domain :PizzaVeggie;
+        rdfs:range xsd:double . 
+#  --------------------------- Property 4------------------------- 
+:costs1 rdf:type owl:DatatypeProperty ;
+        rdfs:label "costs1"@IRI-based; 
+        rdfs:label "costs"@en; 
+        rdfs:domain :PizzaVeggie;
+        rdfs:range xsd:double . 
+#  --------------------------- Property 5------------------------- 
+:weighs rdf:type owl:DatatypeProperty ;
+        rdfs:label "weighs"@IRI-based; 
+        rdfs:label "weighs"@en; 
+        rdfs:domain :PizzaPollo;
+        rdfs:range xsd:double . 
+#  --------------------------- Property 6------------------------- 
+:ObjProp4 rdf:type owl:ObjectProperty ;
+          rdfs:label "ObjProp4"@IRI-based; 
+          rdfs:label "contains"@en; 
+          rdfs:domain :PizzaVeggie;
+          rdfs:range :Corn . 
+#  --------------------------- Property 7------------------------- 
+:objProp5 rdf:type owl:ObjectProperty ;
+          rdfs:label "objProp5"@IRI-based; 
+          rdfs:label "hasTopping"@en; 
+          rdfs:domain :PizzaVeggie;
+          rdfs:range :PizzaTopping . 
+#  --------------------------- Property 8------------------------- 
+:objProp3 rdf:type owl:ObjectProperty ;
+          rdfs:label "objProp3"@IRI-based; 
+          rdfs:label "contains"@en; 
+          rdfs:domain :PizzaVeggie;
+          rdfs:range :Mushrooms . 
+#  --------------------------- Property 9------------------------- 
+:costs rdf:type owl:DatatypeProperty ;
+       rdfs:label "costs"@IRI-based; 
+       rdfs:label "costs"@en; 
+       rdfs:domain :PizzaPollo;
+       rdfs:range xsd:double . 
+#  --------------------------- Property 10------------------------- 
+:objProp1 rdf:type owl:ObjectProperty ;
+          rdfs:label "objProp1"@IRI-based; 
+          rdfs:label "contains"@en; 
+          rdfs:domain :PizzaPollo;
+          rdfs:range :Olives . 
+#  --------------------------- Property 11------------------------- 
+:weighs1 rdf:type owl:DatatypeProperty ;
+         rdfs:label "weighs1"@IRI-based; 
+         rdfs:label "weighs"@en; 
+         rdfs:domain :PizzaVeggie;
+         rdfs:range xsd:double . 
+###  Class Definitions (Number of Classes) 11 ###
+#  --------------------------- Class  0------------------------- 
+:Thong rdf:type owl:Class; 
+       rdfs:label "Thong"@IRI-based; 
+       rdfs:label "Thing"@en . 
+#  --------------------------- Class  1------------------------- 
+:Pizza rdf:type owl:Class; 
+       rdfs:subClassOf :Thong ;
+       rdfs:label "Pizza"@IRI-based; 
+       rdfs:label "Pizza"@en . 
+#  --------------------------- Class  2------------------------- 
+:Mushrooms rdf:type owl:Class; 
+           rdfs:subClassOf :Ingredients ;
+           rdfs:label "Mushrooms"@IRI-based; 
+           rdfs:label "Mushrooms"@en . 
+#  --------------------------- Class  3------------------------- 
+:PizzaTopping rdf:type owl:Class; 
+              rdfs:subClassOf :Ingredients ;
+              rdfs:label "PizzaTopping"@IRI-based; 
+              rdfs:label "VeggieTopping"@en . 
+#  --------------------------- Class  4------------------------- 
+:Corn rdf:type owl:Class; 
+      rdfs:subClassOf :Ingredients ;
+      rdfs:label "Corn"@IRI-based; 
+      rdfs:label "Corn"@en . 
+#  --------------------------- Class  5------------------------- 
+:Olives rdf:type owl:Class; 
+        rdfs:subClassOf :Ingredients ;
+        rdfs:label "Olives"@IRI-based; 
+        rdfs:label "Olives"@en . 
+#  --------------------------- Class  6------------------------- 
+:ChickenBreast rdf:type owl:Class; 
+               rdfs:subClassOf :Ingredients ;
+               rdfs:label "ChickenBreast"@IRI-based; 
+               rdfs:label "ChickenBreast"@en . 
+#  --------------------------- Class  7------------------------- 
+:PizzaPollo rdf:type owl:Class; 
+            rdfs:subClassOf :Pizza ;
+            rdfs:label "PizzaPollo"@IRI-based; 
+            rdfs:label "PizzaPollo"@en . 
+#  --------------------------- Class  8------------------------- 
+:PolloTopping rdf:type owl:Class; 
+              rdfs:subClassOf :Ingredients ;
+              rdfs:label "PolloTopping"@IRI-based; 
+              rdfs:label "PolloTopping"@en . 
+#  --------------------------- Class  9------------------------- 
+:Ingredients rdf:type owl:Class; 
+             rdfs:subClassOf :Thong ;
+             rdfs:label "Ingredients"@IRI-based; 
+             rdfs:label "Ingredients"@en . 
+#  --------------------------- Class  10------------------------- 
+:PizzaVeggie rdf:type owl:Class; 
+             rdfs:subClassOf :Pizza ;
+             rdfs:label "PizzaVeggie"@IRI-based; 
+             rdfs:label "PizzaVeggie"@en . 
